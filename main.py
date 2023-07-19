@@ -67,6 +67,7 @@ def end_screen():
         print(result)
     try:
         file = open("C:\\Users\\shiri pc\\PycharmProjects\\CurrencyConversionProject\\Results", "a", encoding="utf-8")
+        file.write(result)
         file.close()
     except IOError:
         pass
